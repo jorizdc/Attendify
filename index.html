@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Centering</title>
+	
+	<script>
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+	</script>
+	
+    <style>
+        body {
+		-webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-bottom: 50px; /* Adjust as needed */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 20px 40px;
+            font-size: 30px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #3498db;
+            border: 1px solid #2980b9;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Customize button styles */
+        #attendify {
+            background-color: #009600;
+            border: 1px solid #219653;
+        }
+
+        #clarify {
+            background-color: #ff0000;
+            border: 1px solid #c0392b;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <a href="https://script.google.com/macros/s/AKfycbwYLrwnEC6_XxE8D3K3bX6M-3HAZim4ivvPeAOzv6s9dyb81kWXD0wq79b9WMpBvaO01Q/exec" class="button" id="attendify">@ttendify</a>
+        <a href="#" class="button" id="clarify">Cl@rify</a>
+    </div>
+
+    <p></p> <!-- Add empty lines -->
+
+    <div class="copyright">
+        All rights reserved &copy; 2023 Joriz D. Chiong
+    </div>
+
+</body>
+</html>
